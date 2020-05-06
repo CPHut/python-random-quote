@@ -1,11 +1,8 @@
-def potatoe():
-    print("Keep it logically awesome.")
+import random
+f = open("quotes.txt")
+quotes = f.readlines()
+f.close()
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
-
-  #print(quotes)
-
-if __name__== "__main__":
-  potatoe()
+last = 13
+rnd = random.randint(0, last)
+print(quotes[rnd])
